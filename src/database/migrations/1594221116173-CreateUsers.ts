@@ -18,6 +18,39 @@ export default class CreateUsers1594221116173 implements MigrationInterface {
             type: 'varchar',
           },
           {
+            name: 'cpf',
+            type: 'int',
+            isUnique: true,
+          },
+          {
+            name: 'date_of_birth',
+            type: 'varchar',
+          },
+          {
+            name: 'gender',
+            type: 'int',
+          },
+          {
+            name: 'cell_phone',
+            type: 'int',
+          },
+          {
+            name: 'address',
+            type: 'varchar',
+          },
+          {
+            name: 'address_neighborhood',
+            type: 'varchar',
+          },
+          {
+            name: 'address_number',
+            type: 'int',
+          },
+          {
+            name: 'address_complement',
+            type: 'varchar',
+          },
+          {
             name: 'email',
             type: 'varchar',
             isUnique: true,
@@ -25,6 +58,15 @@ export default class CreateUsers1594221116173 implements MigrationInterface {
           {
             name: 'password',
             type: 'varchar',
+          },
+          {
+            name: 'terms',
+            type: 'boolean',
+          },
+          {
+            name: 'avatar',
+            type: 'varchar',
+            isNullable: true,
           },
           {
             name: 'created_at',
