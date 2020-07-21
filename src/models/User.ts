@@ -15,10 +15,37 @@ class User {
     name: string;
 
     @Column()
+    cpf: number;
+
+    @Column()
+    date_of_birth: number;
+
+    @Column()
+    gender: number;
+
+    @Column()
+    cell_phone: string;
+
+    @Column()
+    address: string;
+
+    @Column()
+    address_neighborhood: string;
+
+    @Column()
+    address_number: number;
+
+    @Column()
+    address_complement: string;
+
+    @Column()
     email: string;
 
     @Column()
     password: string;
+
+    @Column()
+    terms: boolean;
 
     @Column()
     avatar: string;
