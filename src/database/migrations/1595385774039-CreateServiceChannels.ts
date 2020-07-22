@@ -14,59 +14,12 @@ export default class CreateUsers1594221116173 implements MigrationInterface {
                         default: 'uuid_generate_v4()',
                     },
                     {
-                        name: 'name',
+                        name: 'title',
                         type: 'varchar',
                     },
                     {
-                        name: 'cpf',
-                        type: 'int',
-                        isUnique: true,
-                    },
-                    {
-                        name: 'date_of_birth',
+                        name: 'phone',
                         type: 'varchar',
-                    },
-                    {
-                        name: 'gender',
-                        type: 'int',
-                    },
-                    {
-                        name: 'cell_phone',
-                        type: 'int',
-                    },
-                    {
-                        name: 'address',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'address_neighborhood',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'address_number',
-                        type: 'int',
-                    },
-                    {
-                        name: 'address_complement',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'email',
-                        type: 'varchar',
-                        isUnique: true,
-                    },
-                    {
-                        name: 'password',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'terms',
-                        type: 'boolean',
-                    },
-                    {
-                        name: 'avatar',
-                        type: 'varchar',
-                        isNullable: true,
                     },
                     {
                         name: 'created_at',
