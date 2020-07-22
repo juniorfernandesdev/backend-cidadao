@@ -71,7 +71,7 @@ export default class CreateUsers1594221116173 implements MigrationInterface {
                     {
                         name: 'profile',
                         type: 'booleam',
-                        isNullable: true,
+                        default: false,
                     },
                     {
                         name: 'created_at',
