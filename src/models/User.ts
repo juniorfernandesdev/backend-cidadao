@@ -50,6 +50,9 @@ class User {
     @Column()
     avatar: string;
 
+    @Column()
+    profile: boolean;
+
     @CreateDateColumn()
     created_at: Date;
 
