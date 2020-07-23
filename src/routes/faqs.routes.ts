@@ -1,10 +1,14 @@
 import { Router } from 'express';
+import { getCustomRepository } from 'typeorm';
 import CreateFaqServices from '../services/CreateFaqServices';
+import FaqRepository from '../repositories/FaqRepository';
 
 const faqsRouter = Router();
 
 faqsRouter.get('/', async (request, response) => {
-    return response.json({ message: true });
+    const faqsRepository = getCustomRepository(FaqRepository);
+    const faqs = await faqsRepository.find();
+    return response.json(faqs);
 });
 
 faqsRouter.post('/', async (request, response) => {
