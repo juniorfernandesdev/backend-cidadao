@@ -5,7 +5,7 @@ export default class CreateCategories1595385442602
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(
             new Table({
-                name: 'categories_manifests',
+                name: 'category_options',
                 columns: [
                     {
                         name: 'id',
@@ -19,55 +19,8 @@ export default class CreateCategories1595385442602
                         type: 'varchar',
                     },
                     {
-                        name: 'cpf',
+                        name: 'category_options',
                         type: 'int',
-                        isUnique: true,
-                    },
-                    {
-                        name: 'date_of_birth',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'gender',
-                        type: 'int',
-                    },
-                    {
-                        name: 'cell_phone',
-                        type: 'int',
-                    },
-                    {
-                        name: 'address',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'address_neighborhood',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'address_number',
-                        type: 'int',
-                    },
-                    {
-                        name: 'address_complement',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'email',
-                        type: 'varchar',
-                        isUnique: true,
-                    },
-                    {
-                        name: 'password',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'terms',
-                        type: 'boolean',
-                    },
-                    {
-                        name: 'avatar',
-                        type: 'varchar',
-                        isNullable: true,
                     },
                     {
                         name: 'created_at',
