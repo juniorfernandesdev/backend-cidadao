@@ -4,7 +4,7 @@ export default class CreateOptions1595385476595 implements MigrationInterface {
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(
             new Table({
-                name: 'options_categories',
+                name: 'category_options',
                 columns: [
                     {
                         name: 'id',
@@ -18,55 +18,8 @@ export default class CreateOptions1595385476595 implements MigrationInterface {
                         type: 'varchar',
                     },
                     {
-                        name: 'cpf',
+                        name: 'category_id',
                         type: 'int',
-                        isUnique: true,
-                    },
-                    {
-                        name: 'date_of_birth',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'gender',
-                        type: 'int',
-                    },
-                    {
-                        name: 'cell_phone',
-                        type: 'int',
-                    },
-                    {
-                        name: 'address',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'address_neighborhood',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'address_number',
-                        type: 'int',
-                    },
-                    {
-                        name: 'address_complement',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'email',
-                        type: 'varchar',
-                        isUnique: true,
-                    },
-                    {
-                        name: 'password',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'terms',
-                        type: 'boolean',
-                    },
-                    {
-                        name: 'avatar',
-                        type: 'varchar',
-                        isNullable: true,
                     },
                     {
                         name: 'created_at',
