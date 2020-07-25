@@ -1,15 +1,15 @@
 import { EntityRepository, Repository } from 'typeorm';
 
-import Faqs from '../models/Faqs';
+import Categories from '../models/Category';
 
-@EntityRepository(Faqs)
-class FaqRepository extends Repository<Faqs> {
-    public async findByDate(date: Date): Promise<Faqs | null> {
-        const findFaq = await this.findOne({
+@EntityRepository(Categories)
+class CategoryRepository extends Repository<Categories> {
+    public async findByDate(date: Date): Promise<Categories | null> {
+        const findCategory = await this.findOne({
             where: { date },
         });
-        return findFaq || null;
+        return findCategory || null;
     }
 }
 
-export default FaqRepository;
+export default CategoryRepository;
