@@ -22,6 +22,46 @@ export default class CreateOptions1595385476595 implements MigrationInterface {
                         type: 'int',
                     },
                     {
+                        name: 'has_anonymous',
+                        type: 'boolean',
+                    },
+                    {
+                        name: 'has_descriton',
+                        type: 'boolean',
+                    },
+                    {
+                        name: 'has_descriton_allegory',
+                        type: 'boolean',
+                    },
+                    {
+                        name: 'has_descriton_suggestion',
+                        type: 'boolean',
+                    },
+                    {
+                        name: 'has_descriton_request',
+                        type: 'boolean',
+                    },
+                    {
+                        name: 'has_descriton_acts_the_facts',
+                        type: 'boolean',
+                    },
+                    {
+                        name: 'has_descriton_involved',
+                        type: 'boolean',
+                    },
+                    {
+                        name: 'has_address',
+                        type: 'boolean',
+                    },
+                    {
+                        name: 'has_location',
+                        type: 'boolean',
+                    },
+                    {
+                        name: 'has_photo',
+                        type: 'boolean',
+                    },
+                    {
                         name: 'created_at',
                         type: 'timestamp',
                         default: 'now()',
