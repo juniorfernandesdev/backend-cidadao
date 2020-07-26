@@ -15,58 +15,65 @@ export default class CreateManifests1595385517749
                         default: 'uuid_generate_v4()',
                     },
                     {
-                        name: 'name',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'cpf',
-                        type: 'int',
-                        isUnique: true,
-                    },
-                    {
-                        name: 'date_of_birth',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'gender',
+                        name: 'user_id',
                         type: 'int',
                     },
                     {
-                        name: 'cell_phone',
+                        name: 'category_option_id',
                         type: 'int',
                     },
                     {
-                        name: 'address',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'address_neighborhood',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'address_number',
-                        type: 'int',
-                    },
-                    {
-                        name: 'address_complement',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'email',
-                        type: 'varchar',
-                        isUnique: true,
-                    },
-                    {
-                        name: 'password',
-                        type: 'varchar',
-                    },
-                    {
-                        name: 'terms',
+                        name: 'status_manifest',
                         type: 'boolean',
                     },
                     {
-                        name: 'avatar',
-                        type: 'varchar',
+                        name: 'anonymous',
+                        type: 'boolean',
+                        isNullable: true,
+                    },
+                    {
+                        name: 'descriton',
+                        type: 'boolean',
+                        isNullable: true,
+                    },
+                    {
+                        name: 'descriton_allegory',
+                        type: 'boolean',
+                        isNullable: true,
+                    },
+                    {
+                        name: 'descriton_suggestion',
+                        type: 'boolean',
+                        isNullable: true,
+                    },
+                    {
+                        name: 'descriton_request',
+                        type: 'boolean',
+                        isNullable: true,
+                    },
+                    {
+                        name: 'descriton_acts_the_facts',
+                        type: 'boolean',
+                        isNullable: true,
+                    },
+                    {
+                        name: 'descriton_involved',
+                        type: 'boolean',
+                        isNullable: true,
+                    },
+                    {
+                        name: 'address',
+                        type: 'boolean',
+                        isNullable: true,
+                    },
+                    {
+                        name: 'location',
+                        type: 'boolean',
+                        isNullable: true,
+                    },
+                    {
+                        name: 'photo',
+                        type: 'boolean',
                         isNullable: true,
                     },
                     {
