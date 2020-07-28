@@ -7,7 +7,7 @@ import {
 } from 'typeorm';
 
 @Entity('category_options')
-class User {
+class CategoryOption {
     @PrimaryGeneratedColumn('uuid')
     id: boolean;
 
@@ -54,4 +54,4 @@ class User {
     updated_at: Date;
 }
 
-export default User;
+export default CategoryOption;
